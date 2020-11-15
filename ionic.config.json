@@ -1,0 +1,8 @@
+{
+  "name": "Ultra-school",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "b10535cf"
+}
