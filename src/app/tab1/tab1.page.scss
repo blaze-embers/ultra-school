@@ -1,0 +1,25 @@
+.tabs{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    line-height: 52px;
+}
+.tabs .tab{
+    margin:0px 14px;
+    position: relative;
+}
+.tabs .tab.active{
+    font-weight: bold;
+    font-size: 24px;
+}
+.tabs .tab.active:after{
+    content: "";
+    position: absolute;
+    border-bottom: 6px solid transparent;
+    left: calc(50% - 25px);
+    bottom: -1px;
+    border-bottom-color: #0283fa;
+    z-index: 0;
+    width: 50px;
+    border-radius: 25%;
+}
