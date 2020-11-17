@@ -9,7 +9,9 @@ const routes: Routes = [
     children: [
       {
         path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        loadChildren: () => import('../home-page/home-page-main/home-page-main.module').then(m => m.HomePageMainModule)
+        // loadChildren: ()=> import('../home-page/all-staff-learning/all-staff-learning.module').then(m=> m.AllStaffLearningModule)
+        // loadChildren: ()=> import('../home-page/all-staff-learning/all-staff-learning.component').then(m=> m.AllStaffLearningComponent)
       },
       {
         path: 'tab2',
