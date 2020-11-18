@@ -1,3 +1,54 @@
-<p>
-  white-collar-zone works!
-</p>
+<!-- <ion-header [translucent]="false">
+  <ion-toolbar>
+    <ion-title class="page-title">
+      企业知识库
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<div class="study-ranking-title">
+  <div class="main-title">企业知识库</div>
+</div>
+<div class="panel-container">
+  <div class="left-part">
+    <div class="panel-large panel-radius color-a">
+      <div class="panel-title">新员工入职课程</div>
+      <div class="panel-sub">2课程</div>
+    </div>
+    <div class="panel-large panel-radius color-b">
+      <div class="panel-title">后备人才培训</div>
+      <div class="panel-sub">0课程</div>
+    </div>
+  </div>
+  <div class="right-part">
+    <div class="panel-small panel-radius color-c">
+      <div class="panel-title">在职培训课程</div>
+      <div class="panel-sub">5课程</div>
+    </div>
+    <div class="panel-small panel-radius color-d">
+      <div class="panel-title">培训分享</div>
+      <div class="panel-sub">7课程</div>
+    </div>
+    <div class="panel-small panel-radius color-e grid-row">
+      <div class="panel-title">全部分类</div>
+      <div class="panel-sub">></div>
+    </div>
+  </div>
+</div>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title class="card-title">立即建课 分享智慧</ion-card-title>
+  </ion-card-header>
+  <ion-card-content class="btn-container">
+    <div *ngFor="let item of btns" class="btn-item">
+      <div>
+        <div class="btn-icon">
+          <ion-icon name="{{item.iconPath}}" class="search-icon"></ion-icon>
+        </div>
+        <div class="btn-title">
+          {{item.title}}
+        </div>
+      </div>
+    </div>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,83 @@
+.search-item{
+    display: flex;
+    flex-direction: row;
+    height:100px;
+    position: relative;
+}
+.search-input{
+    height:100%;
+    width:calc(100% - 150px);
+    background-color: #eee;
+    border-radius: 50px;
+}
+.search-input .native-input{
+    padding:6px 40px !important;
+}
+.search-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 9;
+    opacity: 1;
+    color: #7c7c7c;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.btn-item{
+    width: calc(20% - 0px);
+    padding: 10px 6px;
+    display: flex;
+    flex-direction: column;
+}
+.btn-icon{
+    width: 100%;
+}
+.btn-title{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+.task-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+}
+.task-icon{
+    color: #0482f3;
+    font-size: 18px;
+}
+//---------------------------
+.study-ranking-row{
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.study-ranking-row .study-ranking-item{
+    width:28%;
+    position: relative;
+}
+.study-ranking-row .study-ranking-item.large{
+    width:34%;
+}
+.study-ranking-item .study-ranking-avatar{
+    position: absolute;
+    width: calc(100% - 4px);
+    left: 2px;
+    top: 24px;
+    border-radius: 50%;
+}
+.study-ranking-item.large .study-ranking-avatar{    
+    position: absolute;
+    width: calc(100% - 6px);
+    left: 3px;
+    top: 28px;
+    border-radius: 50%;
+}

@@ -24,3 +24,66 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.native-input.sc-ion-input-md {
+    padding-left: 40px !important;
+}
+.native-input.sc-ion-input-ios{
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+.item-inner{
+    border:0px solid #FFF;
+}
+//-----------------------
+.study-ranking-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 20px;
+}
+.study-ranking-title .main-title{
+    font-size:18px;
+    font-weight: 900;
+    color:#000;
+}
+.study-ranking-title .sub-title{
+    font-size:14px;
+    font-weight: 100;
+    color:#111;
+}
+
+.search-item::part(native) div{
+    border-bottom: 0px solid #FFF !important;
+    background: blue;
+}
+
+.ion-page {
+    .tabbar {
+      .ion-tab-base {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      $tabImageName: "tab1" "tab2" "tab3";
+      @for $i from 1 to 4 {
+        //for all platform
+        .tab-button .icon-#{nth($tabImageName, $i)} {
+          @extend .ion-tab-base;
+          background-image: url("./assets/img/tabbar/#{nth($tabImageName, $i)}.png");
+
+        }
+        .tab-button.tab-selected .icon-#{nth($tabImageName, $i)} {
+          @extend .ion-tab-base;
+          background-image: url("./assets/img/tabbar/#{nth($tabImageName, $i)}_active.png");
+        }
+        .tab-button.tab-selected ion-label{
+            color:#3380FF;
+        }
+      }
+    }
+}

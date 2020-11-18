@@ -1,18 +1,35 @@
+<!-- 
+  <ion-tabs>
+    <ion-tab [root]="tab1Root" tabTitle="首页" tabIcon="tab-home"></ion-tab>
+    <ion-tab [root]="tab2Root" tabTitle="课程" tabIcon="tab-lesson"></ion-tab>
+    <ion-tab [root]="tab3Root" tabTitle="消息" tabIcon="tab-bell"></ion-tab>
+    <ion-tab [root]="tab4Root" tabTitle="我的" tabIcon="tab-me"></ion-tab>
+  </ion-tabs>
+  <ion-tabs class="tabs-icon-top tabs-color-active-assertive tabs-light" ng-class="{'tabs-item-hide': $root.hideTabs}" delegateHandle="main">
+		<ion-tab title="首页" icon="ion-ios-home0" nav-direction="swap" icon-on="ion-ios-home1" href="#/tabs/tab1">
+			<ion-nav-view name="tab-index"></ion-nav-view>
+		</ion-tab>
+		<ion-tab title="学习" icon="ion-ios-book0" nav-direction="swap" icon-on="ion-ios-book1" href="#/tabs/tab2">
+			<ion-nav-view name="tab-inread"></ion-nav-view>
+		</ion-tab>
+		<ion-tab title="我的" icon="ion-android-person0" nav-direction="swap" icon-on="ion-android-person1" href="#tabs/tab3">
+			<ion-nav-view name="tab-usercenter"></ion-nav-view>
+		</ion-tab>
+  </ion-tabs> -->
 <ion-tabs>
-
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1">
-      <ion-icon name="triangle"></ion-icon>
+  <ion-tab-bar slot="bottom"  class="tabbar">
+    <ion-tab-button tab="tab1" class="tab-button">
+      <ion-icon name="" class="icon-tab1"></ion-icon>
       <ion-label>首页</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
+    <ion-tab-button tab="tab2" class="tab-button">
+      <ion-icon name="" class="icon-tab2"></ion-icon>
       <ion-label>学习</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
+    <ion-tab-button tab="tab3" class="tab-button">
+      <ion-icon name="" class="icon-tab3"></ion-icon>
       <ion-label>我的</ion-label>
     </ion-tab-button>
   </ion-tab-bar>

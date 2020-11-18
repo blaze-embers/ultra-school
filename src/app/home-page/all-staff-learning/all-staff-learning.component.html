@@ -1,33 +1,53 @@
-<ion-item>
-  <ion-label position="stacked">Stacked Label</ion-label>
-  <ion-input></ion-input>
+<ion-item class="search-item">
+  <ion-input placeholder="请搜索感兴趣的文字和内容" class="search-input"></ion-input>
+  <ion-icon name="search-outline" class="search-icon"></ion-icon>
+  <ion-icon name="scan-outline" class="search-scan"></ion-icon>
 </ion-item>
-<ion-grid>
-  <ion-row>
-    <ion-col>
-      <div>
-        1 of 3
+<div class="btn-container">
+  <div *ngFor="let item of btns" class="btn-item">
+    <div>
+      <div class="btn-icon">
+        <img src="{{item.iconPath}}" />
       </div>
-    </ion-col>
-    <ion-col>
-      <div>
-        2 of 3
+      <div class="btn-title">
+        {{item.title}}
       </div>
-    </ion-col>
-    <ion-col>
-      <div>
-        3 of 3
+    </div>
+  </div>
+</div>
+
+<ion-card>
+  <ion-card-content class="">
+    <div class="task-item">
+      <div class="task-title">
+        <ion-icon name="calendar-clear-outline" class="task-icon"></ion-icon>
+        <span>1个学习任务待完成</span>
       </div>
-    </ion-col>
-    <ion-col>
-      <div>
-        3 of 3
+      <div class="task-go">
+        去完成>
       </div>
-    </ion-col>
-    <ion-col>
-      <div>
-        3 of 3
+    </div>
+  </ion-card-content>
+</ion-card>
+<div class="study-ranking-title">
+  <div class="main-title">学习排行</div>
+  <div class="sub-title">全部排行</div>
+</div>
+<ion-card>
+  <ion-card-content class="">
+    <div class="study-ranking-row">
+      <div class="study-ranking-item">
+        <img src="../../../assets/img/study-ranking/sliver-crown.svg"/>
+        <img class="study-ranking-avatar" src="../../../assets/img/sample-avatar/frog.jpg"/>
       </div>
-    </ion-col>
-  </ion-row>
-</ion-grid>
+      <div class="study-ranking-item large">
+        <img src="../../../assets/img/study-ranking/golden-crown.svg"/>
+        <img class="study-ranking-avatar" src="../../../assets/img/sample-avatar/snake.jpg"/>
+      </div>
+      <div class="study-ranking-item">
+        <img src="../../../assets/img/study-ranking/bronze-crown.svg"/>
+        <img class="study-ranking-avatar" src="../../../assets/img/sample-avatar/turtle.jpg"/>
+      </div>
+    </div>
+  </ion-card-content>
+</ion-card>

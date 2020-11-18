@@ -1,0 +1,99 @@
+.page-title{
+    text-align: left;
+    padding-left: 16px;
+}
+ion-toolbar .toolbar-background{
+    border-bottom: 0px solid #FFF;
+}
+.panel-container{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    padding:0px 0px;
+    height:200px;
+}
+.left-part{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding:0px 8px 0px 16px;
+    justify-content: space-between;
+}
+.right-part{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding:0px 16px 0px 8px;
+    justify-content: space-between;
+}
+.panel-large{
+    width:100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 95px;
+}
+.panel-small{
+    width:100%;
+    padding: 10px;
+    height: 62px;
+}
+.panel-radius{
+    border-radius: 6px;
+}
+.panel-title{
+    color:#FFF;
+    font-size:16px;
+}
+.panel-sub{
+    color:#FFF;
+    opacity: 0.8;
+    font-size: 14px;
+}
+.grid-row{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+}
+.color-a{
+    background-image: linear-gradient(to right, #778ed2 , #5a75aa);
+}
+.color-b{
+    background-image: linear-gradient(to right, #e0c075 , #c9ab65);
+}
+.color-c{
+    background-image: linear-gradient(to right, #6cbbcc , #649fb1);
+}
+.color-d{
+    background-image: linear-gradient(to right, #79a6cd , #7092c2);
+}
+.color-e{
+    background-image: linear-gradient(to right, #8a91ae , #6d7389);
+}
+//-------------------
+.card-title{
+    font-size:16px;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.btn-item{
+    width: calc(25% - 0px);
+    padding: 10px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-icon{
+    font-size: 44px;
+}
+.btn-title{
+    text-align: center;
+}
+.study-ranking-title{
+    padding-top: 8px;
+    padding-bottom: 12px;
+}

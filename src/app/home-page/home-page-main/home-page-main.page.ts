@@ -19,9 +19,10 @@ export class HomePageMainPage implements OnInit{
 	  private router: Router,
     // 当前组件相关的路由器
     private activatedRoute: ActivatedRoute
-    ) {}
+    ) {
+      this.activeRoute(this.tabs[0]);
+  }
   ngOnInit(): void {
-    
   }
   releaseTabs(){
     this.tabs.forEach(item=>{
