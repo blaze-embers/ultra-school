@@ -28,10 +28,9 @@ export class AllStaffLearningComponent implements OnInit {
   ngAfterViewInit() {
     // 修改返回按钮中文本的样式
     const ionBackButton = this.element.nativeElement.querySelector('.search-item');
-    console.log('工作',ionBackButton);
     const styleSheet = `
         .item-inner {
-            border:0px solid #FFF;
+            border:0px !important;
         }
     `;
     this.injectStyleToShadowRoot(this.renderer2, ionBackButton, styleSheet);
