@@ -23,6 +23,7 @@ export class HomePageMainPage implements OnInit{
       this.activeRoute(this.tabs[0]);
   }
   ngOnInit(): void {
+    console.log('home-page');
   }
   releaseTabs(){
     this.tabs.forEach(item=>{

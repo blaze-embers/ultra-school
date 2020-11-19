@@ -30,7 +30,7 @@ export class AllStaffLearningComponent implements OnInit {
     const ionBackButton = this.element.nativeElement.querySelector('.search-item');
     const styleSheet = `
         .item-inner {
-            border:0px !important;
+          border: 0px !important;
         }
     `;
     this.injectStyleToShadowRoot(this.renderer2, ionBackButton, styleSheet);
